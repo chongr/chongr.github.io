@@ -165,8 +165,8 @@ BRUSHED.fancyBox = function(){
 				padding : 0,
 				beforeShow: function () {
 					this.title = $(this.element).attr('title');
-					linkInfo = '<div><a href=' $(this.element).parent().find('img').attr('data-link') + '>' +  $(this.element).parent().find('img').attr('data-link-type') + '</a></div>'
-					this.title = '<h4>' + this.title + '</h4>' + '<div>' + $(this.element).parent().find('img').attr('alt') + '</div>' + linkInfo;
+					linkInfo = '<p><a href=' $(this.element).parent().find('img').attr('data-link') + '>' +  $(this.element).parent().find('img').attr('data-link-type') + '</a></p>'
+					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>' + linkInfo;
 				},
 				helpers : {
 					title : { type: 'inside' },
